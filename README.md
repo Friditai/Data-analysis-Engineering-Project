@@ -1,6 +1,12 @@
 # Data-analysis-Engineering-Project
-The aim of the project to use modified Newtonian dynamics to describe new data for rotation curves of galaxies from astronomical observations by Lelli et al. (The Astronomical Journal, 152 (2016) 157).
 
+# Test of modified Newtonian dynamics with new rotation curves of galaxies
+
+Milena Węsiora
+
+promoter of thesis: dr hab. Jan Franz
+
+The aim of the project to use modified Newtonian dynamics to describe new data for rotation curves of galaxies from astronomical observations by Lelli et al. (The Astronomical Journal, 152 (2016) 157).
 
 The problem of the rotation curve as an anomaly on the galactic scale raises the question of the validity of
 theories trying to explain this phenomenon. One of them, next to dark matter, is the theory of modified Newtonian

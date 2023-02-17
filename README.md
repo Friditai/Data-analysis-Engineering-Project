@@ -1,4 +1,4 @@
-# Data-analysis-Engineering-Project
+# Data analysis: Engineering Project
 
 # Test of modified Newtonian dynamics with new rotation curves of galaxies
 

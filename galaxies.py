@@ -4,7 +4,7 @@ from scipy.optimize import fmin, least_squares
 from sklearn.metrics import mean_squared_error
 import numpy as np
 from math import sqrt, pow
-from openpyxl import Workbook  #library for Excel
+from openpyxl import Workbook  # library for Excel
 
 #data for Excel table
 workbook = Workbook()
@@ -90,7 +90,7 @@ def draw_plot(filename, input_directory_name, output_directory_name):
     galaxy_name = filename[:-CHAR_REMOVE_NUMBER]
     figure_name = galaxy_name + "_plot"
 
-    rows.append([galaxy_name, round(a0_optimal,2), round(mse_mond,2), round(mse_newton,2)]) #add data to array for Excel table
+    rows.append([galaxy_name, round(a0_optimal,2), round(mse_mond,2), round(mse_newton,2)]) # add data to array for Excel table
 
     # draw a plot
     # -----------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ def draw_plot(filename, input_directory_name, output_directory_name):
     ax.plot(X, y,
               'o',
               color ='black',
-              label='observational data points',
+              label ='observational data points',
               markersize = 2)
 
     # draw Vobs errors from data table
@@ -114,14 +114,14 @@ def draw_plot(filename, input_directory_name, output_directory_name):
 
     # MOND curve for a0_optimal
     ax.plot(X, y_mond,
-            color='black',
-            label=f'MOND curve for $a_0$ = {a0_optimal:.2f} $[km^2/s^2kpc]$ - RMSE: {mse_mond:.2f} $[km/s]$')
+            color = 'black',
+            label = f'MOND curve for $a_0$ = {a0_optimal:.2f} $[km^2/s^2kpc]$ - RMSE: {mse_mond:.2f} $[km/s]$')
 
     # Newton curve
     ax.plot(X, y_newton,
             ls='--',
-            color='black',
-            label=f'Newton curve - RMSE:  {mse_newton:.2f} $[km/s]$')
+            color = 'black',
+            label = f'Newton curve - RMSE:  {mse_newton:.2f} $[km/s]$')
 
     # # Put a legend below current axis
     # ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
